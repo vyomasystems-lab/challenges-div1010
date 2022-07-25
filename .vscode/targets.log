@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 14:26:46 2022
+# Make data base, printed on Mon Jul 25 16:01:33 2022
 
 # Variables
 
@@ -77,7 +77,7 @@ PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/
 # environment
 GITPOD_OWNER_ID = 34bbbb5d-6713-4624-9edc-a691d14caab0
 # environment
-GITPOD_WORKSPACE_ID = vyomasystem-challengesd-insqnxyw2w2
+GITPOD_WORKSPACE_ID = vyomasystem-challengesd-wkvd2vw6bub
 # environment
 GITPOD_INTERVAL = 30000
 # environment
@@ -103,7 +103,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 PYENV_ROOT = /home/gitpod/.pyenv
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-c80f1bc7-d4a3-407f-937d-25333882f539.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-7b1b7c90-3ae4-4a52-ab83-701384e79073.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -145,7 +145,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = Mh0yTnLaRb1mgnGrIfHaQ3Vei3lqPouU
+GITPOD_CLI_APITOKEN = Rj9toOAlmE3n5nIoBBvTcyW2GiI7Icvm
 # automatic
 +F = $(notdir $+)
 # environment
@@ -153,7 +153,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-HOSTNAME = vyomasystem-challengesd-insqnxyw2w2
+HOSTNAME = vyomasystem-challengesd-wkvd2vw6bub
 # environment
 GP_PYENV_INIT = true
 # environment
@@ -167,7 +167,6 @@ SDKMAN_VERSION = 5.15.0
 # default
 MAKE = $(MAKE_COMMAND)
 # default
- 
 MAKECMDGOALS := all
 # environment
 IRBRC = /home/gitpod/.rvm/rubies/ruby-2.7.6/.irbrc
@@ -258,7 +257,7 @@ PWD = /workspace/challenges-div1010
 # environment
 LC_ALL = C
 # environment
-GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"vyomasystems-lab/challenges-div1010 - master","ref":"master","refType":"branch","revision":"eebdb939a830fd7a0f97bedcd8ba9b9655773361","repository":{"cloneUrl":"https://github.com/vyomasystems-lab/challenges-div1010.git","host":"github.com","name":"challenges-div1010","owner":"vyomasystems-lab","private":true},"normalizedContextURL":"https://github.com/vyomasystems-lab/challenges-div1010","checkoutLocation":"challenges-div1010"}
+GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"vyomasystems-lab/challenges-div1010 - master","ref":"master","refType":"branch","revision":"7773b80a1460afae45ace4c82abad3fde8d92f5a","repository":{"cloneUrl":"https://github.com/vyomasystems-lab/challenges-div1010.git","host":"github.com","name":"challenges-div1010","owner":"vyomasystems-lab","private":true},"normalizedContextURL":"https://github.com/vyomasystems-lab/challenges-div1010","checkoutLocation":"challenges-div1010"}
 # environment
 JAVA_TOOL_OPTIONS =  -Xmx3435m
 # automatic
@@ -274,13 +273,14 @@ PYENV_VIRTUALENV_INIT = 1
 # environment
 NGINX_DOCROOT_IN_REPO = public
 # default
+ 
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = e1ab0836-7f7a-4660-aabb-7d7d61bc9264
+GITPOD_INSTANCE_ID = 768abe84-6d28-4cfd-9ebd-14ab06113407
 # environment
-GITPOD_WORKSPACE_URL = https://vyomasystem-challengesd-insqnxyw2w2.ws-us54.gitpod.io
+GITPOD_WORKSPACE_URL = https://vyomasystem-challengesd-wkvd2vw6bub.ws-us54.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
@@ -296,7 +296,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 1477087443): 16 files, no impossibilities.
+# . (device 2346, inode 809043196): 16 files, no impossibilities.
 
 # 16 files, no impossibilities in 1 directories.
 
@@ -348,13 +348,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 268 B / avg = 11 B
-# current buf: size = 8162 B / used = 268 B / count = 24 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 24 / storage = 281 B / avg = 11 B
+# current buf: size = 8162 B / used = 281 B / count = 24 / avg = 11 B
 
 # strcache performance: lookups = 27 / hit rate = 11%
- 
 # hash-table stats:
 # Load=24/8192=0%, Rehash=0, Collisions=1/27=4%
-# Finished Make data base on Mon Jul 25 14:26:46 2022
+# Finished Make data base on Mon Jul 25 16:01:33 2022
 
  
