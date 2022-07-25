@@ -35,7 +35,7 @@ The values assigned
     await FallingEdge(dut.clk)
 
     dut.inp_bit.value=1           // The sequence till here: 1011_011
-    await FallingEdge(dut.clk)    //seq_see should becomes 1 at the next positive edge.   
+    await FallingEdge(dut.clk)    //seq_seen should becomes 1 at the next positive edge.   
 ```
 
 The assert statement is used to compare the output of the sequence detector(seq_seen) to the expected output [i.e 1]
