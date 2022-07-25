@@ -20,7 +20,8 @@ async def test_mux(dut):
     await Timer(2,units='ns')
 
     assert dut.out.value == INP13, f"Multiplexer result incorrect :{dut.out.value}!=10"
-
+    
+@cocotb.test()
 async def test_mux_1(dut):
     SEL=30
     INP30=1
