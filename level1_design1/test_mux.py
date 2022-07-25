@@ -18,4 +18,4 @@ async def test_mux(dut):
 
     await Timer(2,units='ns')
 
-    assert dut.out.value == INP13, f"Multiplexer result incorrect :{dut.out.value}!=2"
+    assert dut.out.value == INP13, f"Multiplexer result incorrect :{dut.out.value}!={2}"
