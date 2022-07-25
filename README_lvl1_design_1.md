@@ -27,7 +27,9 @@ The values assigned:
                        File "/workspace/challenges-div1010/level1_design1/test_mux.py", line 22, in test_mux
                          assert dut.out.value == INP13, f"Multiplexer result incorrect :{dut.out.value}!=10"
                      AssertionError: Multiplexer result incorrect :11!=10
-     ```                
+     ``` 
+     
+     
  2)Second Test:
  
  ```
@@ -38,9 +40,11 @@ The values assigned:
     dut.inp30.value=INP30
     
   ```
+  
    The assert statement is used to compare the output of the mutiplexer to the expected output[i.e 1(01)]
    
    Following error statement encountered:
+   
    
    ```
     test_mux_1 failed
