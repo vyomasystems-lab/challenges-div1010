@@ -42,5 +42,4 @@ async def test_seq_bug1(dut):
     await FallingEdge(dut.clk)
     
 
-
     assert dut.seq_seen.value==1,f"Incorrect output {dut.seq_seen.value} !=1"
