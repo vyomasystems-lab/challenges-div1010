@@ -4,7 +4,7 @@ The verification environment is setup using Vyoma's UpTickPro provided for the h
 
 # VERIFICATION ENVIRONMENT:
 
-The CoCoTb based Python test is developed. The test drives inputs to the Design Under Test (multiplexer 31:1 module-mux.v) which takes in 31 2-bit inputs inp0.....inp30 and gives 2-bit output out.The selection input is given using 5-bit sel. 
+The CoCoTb based Python test is developed. The test drives inputs to the Design Under Test (multiplexer module-mux.v) which takes in 31 2-bit inputs inp0.....inp30 and gives 2-bit output out.The selection input is given using 5-bit sel. 
 
 The values assigned:
 1) First Test:
