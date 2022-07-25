@@ -21,13 +21,14 @@ The values assigned:
    The assert statement is used to compare the output of the mutiplexer to the expected output[i.e 2(10)]
    
    Following error statement encountered:
-   ```
+   
+```
     test_mux failed
                      Traceback (most recent call last):
                        File "/workspace/challenges-div1010/level1_design1/test_mux.py", line 22, in test_mux
                          assert dut.out.value == INP13, f"Multiplexer result incorrect :{dut.out.value}!=10"
                      AssertionError: Multiplexer result incorrect :11!=10
-     ``` 
+``` 
      
      
  2)Second Test:
@@ -38,21 +39,20 @@ The values assigned:
     
     dut.sel.value=SEL
     dut.inp30.value=INP30
-    
-  ```
+```
   
    The assert statement is used to compare the output of the mutiplexer to the expected output[i.e 1(01)]
    
    Following error statement encountered:
    
    
-   ```
+```
     test_mux_1 failed
                      Traceback (most recent call last):
                        File "/workspace/challenges-div1010/level1_design1/test_mux.py", line 35, in test_mux_1
                          assert dut.out.value == INP30, f"Multiplexer result incorrect :{dut.out.value}!=01"
                      AssertionError: Multiplexer result incorrect :00!=01
-    ```                 
+ ```                 
                      
    ![image](https://user-images.githubusercontent.com/78270386/180756460-fb5cd49e-43f5-4985-acc2-27d80ce10b7e.png)
 
