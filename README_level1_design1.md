@@ -62,17 +62,23 @@ The values assigned:
 1)1st Test:
 
 Test inputs: inp12=3,inp13=2
+
 Expected Output: out= 2 (10)
+
 Observed Output: out= 3 (11)
+
 
 2)2nd Test:
 
 Test inputs: inp30=1
+
 Expected Output: out= 1 (01)
+
 Observed Output: out= 0 (00)
 
 
- Output mismatch singnals to presence of bugs in design
+
+Output mismatch singnals to presence of bugs in design
  
  # Design Bug
  
