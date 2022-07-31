@@ -74,7 +74,7 @@ Expected output: seq_seen=1
 Observed output: seq_seen=0
 
 
-# DESIGN BUG
+# DESIGN BUG - 1
 
 Analysing the design it was found that bugs were present:
 
@@ -108,12 +108,100 @@ The following correction are done:
 This leads to the last 1 being considered as starting of another sequence with next state being either SEQ_10 or SEQ_1 despending on the input bit.
 
 
-# DESIGN FIX
+# DESIGN FIX - 1
 
 After fixing the bug for the same test case and input sequnece the design passes and the seq_seen bit is 1, hence completing overlapping function.
 
 
 ![image](https://user-images.githubusercontent.com/78270386/180815693-abfbad6c-aae5-43ca-b51c-c791806e630e.png)
+
+
+
+# DESIGN BUG - 2
+For the values assigned 
+
+```
+
+    clock = Clock(dut.clk, 10, units="us")  
+    cocotb.start_soon(clock.start())        
+
+    # reset
+    dut.reset.value = 1
+    await FallingEdge(dut.clk)  
+    dut.reset.value = 0
+    
+    await FallingEdge(dut.clk)
+    dut.inp_bit.value=1
+    await FallingEdge(dut.clk)
+    dut.inp_bit.value=1
+    await FallingEdge(dut.clk)
+    dut.inp_bit.value=0
+    await FallingEdge(dut.clk)
+
+    dut.inp_bit.value=1
+    await FallingEdge(dut.clk)
+
+    dut.inp_bit.value=1
+    await FallingEdge(dut.clk)
+    
+```
+
+AND the assertion statement
+
+```
+
+assert dut.seq_seen.value==1,f"Incorrect output {dut.seq_seen.value} !=1"
+
+```
+
+
+For a input of 1_1_0_1_1 the output after a falling edge should be 1 ,as the dectector is overlapping the second 1 in the sequence should be considered the start of a correct statement.
+
+But the test case is not passed with following traceback:
+
+
+![test_seq_detect_1011 py - challenges-div1010 - Gitpod Code - Google Chrome 25-07-2022 21_38_20](https://user-images.githubusercontent.com/78270386/182043169-ced1dd4c-8477-49dd-9a84-f468b4957c11.png)
+
+
+# Design Fix -2
+
+Upon analysing the design another bug is found:
+
+In the SEQ_1 description:
+
+```
+SEQ_1:
+      begin
+        if(inp_bit == 1)
+          next_state = IDLE;
+        else
+          next_state = SEQ_10;
+          
+```
+
+The state after encountering a 1 is going back to the idle state, but as this design is a overlapping detector the 1 should be considered a valid start of a correct sequence so the state should remain SEQ_1 instead of going back to idle.This is causing the error and hence the test failed.
+
+
+The code is corrected as:
+
+```
+
+SEQ_1:
+      begin
+        if(inp_bit == 1)
+          next_state = SEQ_1;
+        else
+          next_state = SEQ_10;
+      end
+
+```
+
+After the code is corrected the design passes the test case for the same test scenario and inputs:
+
+![test_seq_detect_1011 py - challenges-div1010 - Gitpod Code - Google Chrome 25-07-2022 21_40_41](https://user-images.githubusercontent.com/78270386/182043371-b3ebb5db-8878-45d8-94ea-47c28cde83cd.png)
+
+
+                     
 
 
 
