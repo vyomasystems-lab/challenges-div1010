@@ -78,6 +78,7 @@ When the read_enable(RD_EN) is made 1 and at the next positive edge of the clock
 
 Test inputs: reset=0 
              , reset=1 (next rising edge)
+
 WR_EN=1
 
 clock:10 us clock period
