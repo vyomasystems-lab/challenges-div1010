@@ -8,14 +8,14 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 16:01:33 2022
+# Make data base, printed on Sun Jul 31 17:39:37 2022
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-RUBY_VERSION = ruby-2.7.6
+RUBY_VERSION = ruby-3.1.2
 # automatic
 ?F = $(notdir $?)
 # environment
@@ -49,6 +49,8 @@ GITPOD_THEIA_PORT = 23000
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
+POETRY_CACHE_DIR = /workspace/.pyenv_mirror/poetry
+# environment
 GITPOD_ANALYTICS_WRITER = segment
 # environment
 GO_VERSION = 1.18.4
@@ -73,11 +75,11 @@ VSCODE_CWD = /ide
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.6/bin:/home/gitpod/.rvm/gems/ruby-2.7.6@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.6/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.16.0/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.16.0/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.16.0/bin:/home/gitpod/.nvm/versions/node/v16.16.0/bin
+PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/home/gitpod/.local/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.local/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-3.1.2/bin:/home/gitpod/.rvm/gems/ruby-3.1.2@global/bin:/home/gitpod/.rvm/rubies/ruby-3.1.2/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.16.0/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/home/gitpod/.local/bin:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.16.0/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.16.0/bin:/home/gitpod/.nvm/versions/node/v16.16.0/bin
 # environment
 GITPOD_OWNER_ID = 34bbbb5d-6713-4624-9edc-a691d14caab0
 # environment
-GITPOD_WORKSPACE_ID = vyomasystem-challengesd-wkvd2vw6bub
+GITPOD_WORKSPACE_ID = vyomasystem-challengesd-we4fipvidk4
 # environment
 GITPOD_INTERVAL = 30000
 # environment
@@ -103,7 +105,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 PYENV_ROOT = /home/gitpod/.pyenv
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-7b1b7c90-3ae4-4a52-ab83-701384e79073.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-1d2d57ac-7409-42f1-afdb-505786a067bf.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -127,7 +129,7 @@ WORKSPACEKIT_WRAP_NETNS = true
 # default
 .LOADED := 
 # environment
-GEM_HOME = /home/gitpod/.rvm/gems/ruby-2.7.6
+GEM_HOME = /home/gitpod/.rvm/gems/ruby-3.1.2
 # environment
 MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
 # environment
@@ -145,7 +147,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = Rj9toOAlmE3n5nIoBBvTcyW2GiI7Icvm
+GITPOD_CLI_APITOKEN = ZX2kksv7wOQhxBoDdEMk0S82h_AJ2Zrj
 # automatic
 +F = $(notdir $+)
 # environment
@@ -153,7 +155,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-HOSTNAME = vyomasystem-challengesd-wkvd2vw6bub
+HOSTNAME = vyomasystem-challengesd-we4fipvidk4
 # environment
 GP_PYENV_INIT = true
 # environment
@@ -161,7 +163,7 @@ GRADLE_USER_HOME = /workspace/.gradle/
 # environment
 MAKELEVEL := 0
 # environment
-GEM_PATH = /home/gitpod/.rvm/gems/ruby-2.7.6:/home/gitpod/.rvm/gems/ruby-2.7.6@global
+GEM_PATH = /home/gitpod/.rvm/gems/ruby-3.1.2:/home/gitpod/.rvm/gems/ruby-3.1.2@global
 # environment
 SDKMAN_VERSION = 5.15.0
 # default
@@ -169,7 +171,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-IRBRC = /home/gitpod/.rvm/rubies/ruby-2.7.6/.irbrc
+IRBRC = /home/gitpod/.rvm/rubies/ruby-3.1.2/.irbrc
 # environment
 SHLVL = 0
 # environment
@@ -257,7 +259,7 @@ PWD = /workspace/challenges-div1010
 # environment
 LC_ALL = C
 # environment
-GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"vyomasystems-lab/challenges-div1010 - master","ref":"master","refType":"branch","revision":"7773b80a1460afae45ace4c82abad3fde8d92f5a","repository":{"cloneUrl":"https://github.com/vyomasystems-lab/challenges-div1010.git","host":"github.com","name":"challenges-div1010","owner":"vyomasystems-lab","private":true},"normalizedContextURL":"https://github.com/vyomasystems-lab/challenges-div1010","checkoutLocation":"challenges-div1010"}
+GITPOD_WORKSPACE_CONTEXT = {"isFile":false,"path":"","title":"vyomasystems-lab/challenges-div1010 - master","ref":"master","refType":"branch","revision":"0fedbc396bcd77ba74e52b54ba2f0ed40652a02f","repository":{"cloneUrl":"https://github.com/vyomasystems-lab/challenges-div1010.git","host":"github.com","name":"challenges-div1010","owner":"vyomasystems-lab","private":true},"normalizedContextURL":"https://github.com/vyomasystems-lab/challenges-div1010","checkoutLocation":"challenges-div1010"}
 # environment
 JAVA_TOOL_OPTIONS =  -Xmx3435m
 # automatic
@@ -273,22 +275,21 @@ PYENV_VIRTUALENV_INIT = 1
 # environment
 NGINX_DOCROOT_IN_REPO = public
 # default
- 
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 768abe84-6d28-4cfd-9ebd-14ab06113407
+GITPOD_INSTANCE_ID = 3daef6ed-ee06-4e00-9460-53c62920e353
 # environment
-GITPOD_WORKSPACE_URL = https://vyomasystem-challengesd-wkvd2vw6bub.ws-us54.gitpod.io
+GITPOD_WORKSPACE_URL = https://vyomasystem-challengesd-we4fipvidk4.ws-us54.gitpod.io
 # default
 .RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
-MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
+MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-3.1.2
 # variable set hash-table stats:
-# Load=137/1024=13%, Rehash=0, Collisions=15/159=9%
+# Load=138/1024=13%, Rehash=0, Collisions=15/160=9%
 
 # Pattern-specific Variable Values
 
@@ -296,7 +297,7 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 809043196): 16 files, no impossibilities.
+# . (device 2346, inode 1745222915): 16 files, no impossibilities.
 
 # 16 files, no impossibilities in 1 directories.
 
@@ -354,6 +355,6 @@ GNUmakefile:
 # strcache performance: lookups = 27 / hit rate = 11%
 # hash-table stats:
 # Load=24/8192=0%, Rehash=0, Collisions=1/27=4%
-# Finished Make data base on Mon Jul 25 16:01:33 2022
+# Finished Make data base on Sun Jul 31 17:39:37 2022
 
  
