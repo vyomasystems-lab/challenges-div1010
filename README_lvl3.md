@@ -81,7 +81,7 @@ Test inputs: reset=0
 
 WR_EN=1
 
-clock:10 us clock period
+Clock:10 us clock period
 
 DATA_IN ={40,50,60,70} @ positive edge of the clock.
 
