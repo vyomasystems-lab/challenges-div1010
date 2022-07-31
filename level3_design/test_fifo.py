@@ -12,7 +12,7 @@ async def test_fifo(dut):
     dut.RSTn.value=0
     dut.WR_EN.value=0
     dut.RD_EN.value=0
-    dut.DATA_IN.value=0
+    #dut.DATA_IN.value=0
     clock=Clock(dut.CLK,10, units="us")
     cocotb.start_soon(clock.start())
 
