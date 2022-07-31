@@ -1,9 +1,15 @@
+
+import os
+import random
+from pathlib import Path
+
 import cocotb
-from cocotb.triggers import Timer
+from cocotb.clock import Clock
+from cocotb.triggers import RisingEdge, FallingEdge
 
 @cocotb.test()
-async def test_mux(dut):
-    clock=clock(dut.CLK,10, units="us")
+async def test_fifo(dut):
+    clock=Clock(dut.CLK,10, units="us")
     cocotb.start_soon(clock.start())
     dut.RSTn.value=0
 
