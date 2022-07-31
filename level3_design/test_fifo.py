@@ -35,8 +35,13 @@ async def test_fifo(dut):
     dut.WR_EN.value=0
 
     await RisingEdge(dut.CLK)
+    await RisingEdge(dut.CLK)
+
+    assert dut.DATA_OUT.value==40,f"Incorrect output {dut.DATA_OUT.value} !=60"
 
     await RisingEdge(dut.CLK)
 
-    assert dut.DATA_OUT.value==60,f"Incorrect output {dut.DATA_OUT.value} !=60"
+    assert dut.DATA_OUT.value==50,f"Incorrect output {dut.DATA_OUT.value} !=50"
+
+
 
