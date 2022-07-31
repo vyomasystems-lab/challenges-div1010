@@ -78,7 +78,7 @@ Observed Output: out= 0 (00)
 
 
 
-Output mismatch singnals to presence of bugs in design
+Output mismatch signals to presence of bugs in design
  
  # Design Bug
  
