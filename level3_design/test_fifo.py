@@ -11,6 +11,7 @@ from cocotb.triggers import RisingEdge, FallingEdge
 async def test_fifo(dut):
     clock=Clock(dut.CLK,10, units="us")
     cocotb.start_soon(clock.start())
+    await RisingEdge(dut.CLK)
     dut.RSTn.value=0
 
     await RisingEdge(dut.CLK)
