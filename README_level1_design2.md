@@ -1,4 +1,4 @@
-# SEQUENCE DETECTOR_1011(overlapping) DESIGN VERIFICATION
+# SEQUENCE DETECTOR_1011(overlapping)  DESIGN VERIFICATION
 
 The verification environment is setup using Vyoma's UpTickPro provided for the hackathon.
 
@@ -159,8 +159,26 @@ For a input of 1_1_0_1_1 the output after a falling edge should be 1 ,as the dec
 
 But the test case is not passed with following traceback:
 
+```
 
-![test_seq_detect_1011 py - challenges-div1010 - Gitpod Code - Google Chrome 25-07-2022 21_38_20](https://user-images.githubusercontent.com/78270386/182043169-ced1dd4c-8477-49dd-9a84-f468b4957c11.png)
+65000.00ns INFO     test_seq_bug1 failed
+                     Traceback (most recent call last):
+                       File "/workspace/challenges-div1010/level1_design2/test_seq_detect_1011_1.py", line 42, in test_seq_bug1
+                         assert dut.seq_seen.value==1,f"Incorrect output {dut.seq_seen.value} !=1"
+                     AssertionError: Incorrect output 0 !=1
+ 65000.00ns INFO     **********************************************************************************************
+                     ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                     **********************************************************************************************
+                     ** test_seq_detect_1011_1.test_seq_bug1   FAIL       65000.00           0.00   27776848.11  **
+                     **********************************************************************************************
+                     ** TESTS=1 PASS=0 FAIL=1 SKIP=0                      65000.00           0.02    3416884.08  **
+                     **********************************************************************************************
+
+```
+
+
+![test_fifo py - challenges-div1010 - Gitpod Code - Google Chrome 01-08-2022 01_54_23](https://user-images.githubusercontent.com/78270386/182043937-99b0f3c1-98f3-4bf8-8f39-aff28b18ad14.png)
+
 
 
 # Design Fix -2
