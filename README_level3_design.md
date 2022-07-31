@@ -70,6 +70,8 @@ As the design currently has no bugs the test case passes.
 ![test_fifo py - challenges-div1010 - Gitpod Code - Google Chrome 01-08-2022 00_12_33](https://user-images.githubusercontent.com/78270386/182041222-d076a1a3-48d8-4c65-8f27-01b0f85980ea.png)
 
 
+
+
 In the FIFO buffer the values passed at respective positive edge of clocks are {40,50,60,70} while reset(RSTn) is 1 and write enable(WR_EN) is 1.
 When the read_enable(RD_EN) is made 1 and at the next positive edge of the clock the assertion is made as the code is bug free the first value out of the FIFO buffer is 40.
 
@@ -120,12 +122,12 @@ To insert bug following change is made
 
 ```
 
-The line of code DATA_OUT<= MEM[rd_count] is changed to DATA_OUT <= MEM[rd_count+1] this leads to data present at the second index of fifo buffer being output (i.e 50) insted of the data present at the first index of buffer(40).
+**The line of code DATA_OUT<= MEM[rd_count] is changed to DATA_OUT <= MEM[rd_count+1] this leads to data present at the second index of fifo buffer being output (i.e 50) insted of the data present at the first index of buffer(i.e 40).**
 
 
 # FAILED ASSERTION 
 
-Under the same test conditions and test scenario the test fails due to the bug and the following message is given.
+Under the same test conditions and test scenario the test fails due to the bug and the following message is given.Due to the ouput being 50 (00110010) instead of 40 (00101000).
 
 
 ```
